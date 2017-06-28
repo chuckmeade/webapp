@@ -1,0 +1,6 @@
+PyPi Package PyServer
+
+This is the package for the PyServer service.  It installs into the standard PyPi directories, and
+installs a SystemD service.  PyServer is a lightweight, basic HTTP server that can be used in
+conjuction with a reverse proxy; Nginx or Apache.  It is a skeleton for basic HTTP requests that 
+can be built on by the user.

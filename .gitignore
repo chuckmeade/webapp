@@ -1,0 +1,5 @@
+build/
+deb_dist/
+dist/
+pyserver.egg-info/
+*.tar.gz
