@@ -3,3 +3,5 @@ deb_dist/
 dist/
 pyserver.egg-info/
 *.tar.gz
+*.pyc
+*.swp
