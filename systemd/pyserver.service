@@ -1,0 +1,12 @@
+[Unit]
+Description = Python daemon for serving up multiple sites
+After = syslog.target
+
+[Service]
+Type = simple
+ExecStart = /usr/sbin/service_start.py
+StandardOutput = syslog
+StandardError = syslog
+
+[Install]
+WantedBy = multi-user.target
