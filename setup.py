@@ -24,7 +24,8 @@ setup(
         "Topic :: Service"
     ],
     data_files = [
-        ('/etc/systemd/system/', ['systemd/pyserver.service'])
+        ('/etc/systemd/system/', ['systemd/pyserver.service']),
+        ('/usr/sbin/', ['service_start.py'])
     ]
 )
 
