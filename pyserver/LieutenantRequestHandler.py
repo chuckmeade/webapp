@@ -22,6 +22,14 @@ HTML_POST_RESPONSE = """
 """
 
 class LieutenantRequestHandler(BaseHTTPRequestHandler):
+    def handle(self):
+        """ Handle multiple requests if necessary """
+        self.close_connection = 1
+
+        print "Handling 1 request: " + self.default_request_version 
+        self.handle_one_request();
+        print "Handled request"
+
     def do_GET(self):
         # Setup the basics of the response
         self.send_response(200)
@@ -43,3 +51,4 @@ class LieutenantRequestHandler(BaseHTTPRequestHandler):
         self.wfile.write('\n')
  
         return
+

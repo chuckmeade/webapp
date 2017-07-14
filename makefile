@@ -16,5 +16,5 @@ service-release: clean-pyc clean-build
 
 clean: clean-pyc clean-build
 
-all:
+pyserver:
 	python $(ROOT)/setup.py --command-packages=stdeb.command bdist_deb
